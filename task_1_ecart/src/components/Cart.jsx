@@ -5,7 +5,7 @@ const Cart = () => {
 
   const cartItems = useSelector((state) => state.addCart)
   const dispatch = useDispatch()
-  console.log(cartItems)
+  // console.log(cartItems)
   const handleRemove = (id) => {
     dispatch(removeCart(id))
   }

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import useProductApi from '../hooks/useProductApi';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart } from '../redux/cartSlice';
+import { addToCart, removeCart } from '../redux/cartSlice';
 
 const ProductList = () => {
   useProductApi(); // just to fetch data and dispatch it
@@ -10,9 +10,15 @@ const ProductList = () => {
 
   // Get product list from Redux store
   const products = useSelector((state) => state.product.products);
-
+  const cartItems = useSelector((state) => state.addCart)
+  console.log(cartItems)
   const addProductsToCart = (product) => {
-    dispatch(addToCart(product));
+    const isInCart = cartItems.some(item => item.id === product.id);
+    if (isInCart) {
+      dispatch(removeCart(product.id));
+    } else {
+      dispatch(addToCart(product));
+    }
   };
 
   return (
@@ -31,7 +37,9 @@ const ProductList = () => {
               onClick={() => addProductsToCart(product)}
               className="bg-lime-700 hover:bg-lime-800 text-white py-1 px-2 rounded text-sm"
             >
-              Add to cart
+              {cartItems.some(item => item.id === product.id)
+                ? "Remove from Cart"
+                : "Add to Cart"}
             </button>
           </div>
         ))
