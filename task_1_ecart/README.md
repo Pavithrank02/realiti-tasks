@@ -23,5 +23,6 @@
       - tailwind install.
       - setting up the redux store. 
       - custom hooh for fetching api.
+      - product list and cart functionlaity complete
     
   

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { productList } from '../redux/productSlice'
+
 const useProductApi = () => {
 
   const dispatch = useDispatch()

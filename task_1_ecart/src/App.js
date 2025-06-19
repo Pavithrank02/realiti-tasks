@@ -1,11 +1,13 @@
 
 import './App.css';
 import ProductList from './components/ProductList';
+import Cart from './components/Cart.jsx';
 
 function App() {
   return (
     <div className="App">
       <ProductList />
+      <Cart />
     </div>
   );
 }
