@@ -21,6 +21,7 @@
       - create-react-app is used for create base react template of website. 
       - installing redux toolkit
       - tailwind install.
-      - 
+      - setting up the redux store. 
+      - custom hooh for fetching api.
     
   
