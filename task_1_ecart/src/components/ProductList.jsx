@@ -3,7 +3,7 @@ import useProductApi from '../hooks/useProductApi';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeCart } from '../redux/cartSlice';
 
-const ProductList = () => {
+const ProductList = ({ searchTerm, setSearchTerm }) => {
   useProductApi(); // just to fetch data and dispatch it
 
   const dispatch = useDispatch();
