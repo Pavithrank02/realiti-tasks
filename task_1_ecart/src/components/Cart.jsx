@@ -5,7 +5,7 @@ import { removeCart } from '../redux/cartSlice'
 const Cart = () => {
   const cartItems = useSelector((state) => state.addCart)
   const dispatch = useDispatch()
-
+  console.log(cartItems)
   const handleRemove = (id) => {
     dispatch(removeCart(id))
   }
@@ -14,7 +14,7 @@ const Cart = () => {
 
   return (
     <div className="p-4 md:p-6 max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6 text-center">🛒 Your Cart</h2>
+      <h2 className="text-2xl font-bold mb-6 text-center">🛒 {cartItems?.length}Cart</h2>
 
       {cartItems.length === 0 ? (
         <div className="text-center text-gray-600 text-lg">No items in cart</div>
