@@ -2,9 +2,10 @@ import React from 'react'
 import logo from '../assets/logo.png'
 import { NavLink } from 'react-router-dom'
 import ThemeToggle from './ThemeToggle'
+import SearchFilter from './SearchFilter'
 const Header = () => {
   return (
-    <div className="bg-black flex flex-col sm:flex-row sm:justify-between sm:items-center w-full max-w-5xl mx-auto px-6 py-4 gap-4 rounded-md shadow-md border border-gray-100 ">
+    <div className="bg-black flex flex-col sm:flex-row sm:justify-between sm:items-center w-full max-w-8xl mx-auto px-6 py-4 gap-4 rounded-md shadow-md border border-gray-100 ">
       <div className="flex items-center gap-3 mt-4">
         <img
           src={logo}

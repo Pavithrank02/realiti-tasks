@@ -4,10 +4,10 @@ import Header from "./components/Header";
 import Pagination from "./components/Pagination";
 import { CourseProvider } from './context/CourseContext'
 import { ThemeProvider } from "./context/ThemeContext";
-
 import MyCourses from "./components/MyCourses";
 
 function App() {
+
 
   return (
     <ThemeProvider>

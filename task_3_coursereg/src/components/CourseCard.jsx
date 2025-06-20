@@ -4,11 +4,12 @@ import { courseData } from "../MOCK_DATA";
 import usePagination from '../hooks/usePagination.js';
 import Pagination from './Pagination.jsx';
 
-const CourseCard = () => {
+const CourseCard = ({ courses }) => {
   const { registered, registerCourse } = useContext(CourseContext);
+  console.log(courses)
   const itemsPerPage = 8;
   const { currentData, currentPage, totalPages, nextPage, prevPage, goToPage } =
-    usePagination(courseData, itemsPerPage);
+    usePagination(courses, itemsPerPage);
 
   const isRegistered = (course) => {
     return registered.some((c) => c.id === course.id);
