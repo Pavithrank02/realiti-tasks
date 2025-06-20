@@ -1,7 +1,14 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
-  theme: { extend: {} },
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html"
+  ],
+  theme: {
+    extend: {},
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif'],
+    },
+  },
+  darkMode: 'class', // Enable class-based dark mode
   plugins: [],
 }

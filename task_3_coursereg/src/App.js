@@ -1,8 +1,11 @@
+import CourseList from "./components/CourseList";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="">
+      <Header />
+      <CourseList />
     </div>
   );
 }
