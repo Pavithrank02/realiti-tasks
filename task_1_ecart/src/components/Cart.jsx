@@ -2,10 +2,11 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeCart } from '../redux/cartSlice'
 
-const Cart = () => {
+const Cart = ({ closeModal }) => {
+
   const cartItems = useSelector((state) => state.addCart)
   const dispatch = useDispatch()
-  console.log(cartItems)
+  // console.log(cartItems)
   const handleRemove = (id) => {
     dispatch(removeCart(id))
   }
@@ -13,16 +14,17 @@ const Cart = () => {
   const total = cartItems.reduce((acc, item) => acc + item.price, 0)
 
   return (
-    <div className="p-4 md:p-6 max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6 text-center">🛒 {cartItems?.length}Cart</h2>
+    <div onClick={closeModal} className="fixed inset-0 flex justify-center flex-col items-center bg-black bg-opacity-50 backdrop-blur-sm z-40"
+    >
 
       {cartItems.length === 0 ? (
-        <div className="text-center text-gray-600 text-lg">No items in cart</div>
+        <div className="text-center text-gray-600 text-lg bg-white">No items in cart</div>
       ) : (
-        <div className="space-y-4">
+        <div className="space-y-4 w-2/4 " onClick={(e) => e.stopPropagation()}   >
           {cartItems.map((item) => (
             <div
               key={item.id}
+
               className="flex flex-col sm:flex-row justify-between items-center border rounded-md p-4 shadow-sm bg-white"
             >
               <div className="flex items-center space-x-4 w-full sm:w-2/3">
@@ -45,16 +47,18 @@ const Cart = () => {
                   Remove
                 </button>
               </div>
+
             </div>
           ))}
-
-          <div className="text-right mt-6">
+          <div className=" flex items-center justify-center text-center h-10 mt-6 bg-brand-orange w-auto ">
             <h3 className="text-lg font-semibold">
-              Total: <span className="text-green-700">${total.toFixed(2)}</span>
+              Total: <span className="">${total.toFixed(2)}</span>
             </h3>
           </div>
+
         </div>
       )}
+
     </div>
   )
 }

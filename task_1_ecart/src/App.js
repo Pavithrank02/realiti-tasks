@@ -12,6 +12,7 @@ function App() {
   const allProducts = useSelector((state) => state.product.products);
   const [searchTerm, setSearchTerm] = useState("")
   const [currentPage, setCurrentPage] = useState(0)
+  const [modal, setModal] = useState(false)
   const itemsPerPage = 4;
 
   const search = searchTerm.toLowerCase();
@@ -29,8 +30,12 @@ function App() {
   console.log(filteredProducts)
 
   const handleCartModal = () => {
-
+    setModal(true)
   }
+  const closeModal = () => {
+    setModal(false);
+  };
+
   return (
     <div className="bg-[#fff8ee] font-montserrat">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
@@ -50,6 +55,11 @@ function App() {
 
       <ProductList products={paginatedProducts} />
       <Pagination currentPage={currentPage} totalPages={noOfPages} setCurrentPage={setCurrentPage} />
+      {modal && (
+        <div>
+          <Cart closeModal={closeModal} />
+        </div>
+      )}
     </div>
   );
 }

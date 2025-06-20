@@ -24,5 +24,9 @@
       - setting up the redux store. 
       - custom hooh for fetching api.
       - product list and cart functionlaity complete
+      - Cart items is set.
+      - cart modal based is set.
+      - search filter is completed.
+      - Pagination is completed
     
   
