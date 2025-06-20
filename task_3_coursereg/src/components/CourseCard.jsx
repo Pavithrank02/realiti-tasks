@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import { CourseContext } from '../context/CourseContext.js';
-import { courseData } from "../MOCK_DATA";
 import usePagination from '../hooks/usePagination.js';
 import Pagination from './Pagination.jsx';
 
