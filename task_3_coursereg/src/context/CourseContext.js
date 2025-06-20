@@ -20,8 +20,12 @@ export const CourseProvider = ({ children }) => {
       setRegistered(prev => [...prev, course])
     }
   }
+  const removeCourse = (courseId) => {
+    setRegistered((prev) => prev.filter((course) => course.id !== courseId));
+  };
+
   return (
-    <CourseContext.Provider value={{ registered, registerCourse }}>
+    <CourseContext.Provider value={{ registered, registerCourse, removeCourse }}>
       {children}
     </CourseContext.Provider>
   )

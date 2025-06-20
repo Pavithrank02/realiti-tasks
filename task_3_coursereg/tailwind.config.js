@@ -9,6 +9,6 @@ module.exports = {
       montserrat: ['Montserrat', 'sans-serif'],
     },
   },
-  darkMode: 'class', // Enable class-based dark mode
+  darkMode: 'class',
   plugins: [],
 }

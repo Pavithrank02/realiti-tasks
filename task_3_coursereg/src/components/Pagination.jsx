@@ -2,23 +2,8 @@ import React from 'react'
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import { courseData } from '../MOCK_DATA.js'
 
-const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
+const Pagination = ({ currentPage, totalPages, nextPage, prevPage, goToPage }) => {
 
-  const handlePrevious = () => {
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
-    }
-  };
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
-
-  const handleNext = () => {
-    if (currentPage < totalPages - 1) {
-      setCurrentPage(currentPage + 1);
-    }
-  };
 
   return !courseData.length ? (<h2>
     No course found
@@ -29,7 +14,7 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
       <div className="flex items-center gap-2">
         <button
           disabled={currentPage === 0}
-          onClick={handlePrevious}
+          onClick={prevPage}
           className="p-2 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           <FiChevronLeft size={20} />
@@ -37,10 +22,10 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
         {[...Array(totalPages).keys()].map((num) => (
           <button
             key={num}
-            onClick={() => handlePageChange(num)}
+            onClick={() => goToPage(num)}
             className={`px-3 py-1 rounded-md text-sm font-medium border transition ${currentPage === num
-              ? "bg-brand-orange text-white border-brand-orange"
-              : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+              ? "bg-orange-500 text-white"
+              : "bg-gray-300 dark:bg-gray-600 text-gray-800 dark:text-gray-200"
               }`}
           >
             {num + 1}
@@ -48,8 +33,8 @@ const Pagination = ({ currentPage, totalPages, setCurrentPage }) => {
         )}
         <button
           disabled={currentPage === totalPages}
-          onClick={handleNext}
-          className="p-2 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
+          onClick={nextPage}
+          className="px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-800 dark:text-gray-200 rounded-r disabled:opacity-50"
         >
           <FiChevronRight size={20} />
         </button>
