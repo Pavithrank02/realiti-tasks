@@ -1,11 +1,17 @@
 import CourseList from "./components/CourseList";
 import Header from "./components/Header";
+import Pagination from "./components/Pagination";
+import { CourseProvider } from './context/CourseContext'
 
 function App() {
   return (
     <div className="">
-      <Header />
-      <CourseList />
+      <CourseProvider >
+        <Header />
+        <CourseList />
+        <Pagination />
+      </CourseProvider>
+
     </div>
   );
 }

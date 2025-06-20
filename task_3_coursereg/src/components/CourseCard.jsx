@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { courseData } from '../MOCK_DATA.js'
+import { CourseContext } from '../context/CourseContext.js'
 
 const CourseCard = () => {
+  const { registerCourse } = useContext(CourseContext)
+  console.log(registerCourse)
   return (
     <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-6">
       {courseData && courseData.map((course) => (
@@ -30,6 +33,7 @@ const CourseCard = () => {
               </p>
             </div>
             <button
+              onClick={() => registerCourse(course)}
               className="mt-4 w-full bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white py-2 px-4 rounded-lg shadow-md transition duration-300"
             >
               Register
