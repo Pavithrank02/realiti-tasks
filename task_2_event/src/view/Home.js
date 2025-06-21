@@ -7,7 +7,6 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const eventsPerPage = 5;
 
-  // Filter events based on the search term
   const filteredEvents = eventData.filter((event) =>
     event.title.toLowerCase().includes(searchTerm.toLowerCase())
   );

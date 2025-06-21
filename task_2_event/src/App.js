@@ -1,4 +1,3 @@
-// src/App.js
 import { Route, Routes } from "react-router-dom";
 import Home from "./view/Home";
 import EventDetail from "./view/EventDetail";
