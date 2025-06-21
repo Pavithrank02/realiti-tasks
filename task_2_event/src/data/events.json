@@ -1,0 +1,902 @@
+[
+    {
+        "id": 1,
+        "title": "Conference Event 1",
+        "description": "Morning film very top message.",
+        "date": "2025-03-31",
+        "category": "Workshop",
+        "location": "Austin",
+        "availableSeats": 21
+    },
+    {
+        "id": 2,
+        "title": "Tech Event 2",
+        "description": "Process put whom. Through health their star ever.",
+        "date": "2025-06-02",
+        "category": "Tech",
+        "location": "Los Angeles",
+        "availableSeats": 26
+    },
+    {
+        "id": 3,
+        "title": "Meetup Event 3",
+        "description": "General treat difficult answer new these tough.",
+        "date": "2025-05-30",
+        "category": "Meetup",
+        "location": "San Francisco",
+        "availableSeats": 30
+    },
+    {
+        "id": 4,
+        "title": "Workshop Event 4",
+        "description": "Plant which range change.",
+        "date": "2025-08-04",
+        "category": "Seminar",
+        "location": "Los Angeles",
+        "availableSeats": 17
+    },
+    {
+        "id": 5,
+        "title": "Conference Event 5",
+        "description": "Light audience court.",
+        "date": "2025-03-25",
+        "category": "Workshop",
+        "location": "Boston",
+        "availableSeats": 26
+    },
+    {
+        "id": 6,
+        "title": "Seminar Event 6",
+        "description": "Reach store accept.",
+        "date": "2025-05-29",
+        "category": "Meetup",
+        "location": "San Francisco",
+        "availableSeats": 21
+    },
+    {
+        "id": 7,
+        "title": "Meetup Event 7",
+        "description": "Role arrive thank become just both.",
+        "date": "2025-04-26",
+        "category": "Conference",
+        "location": "San Francisco",
+        "availableSeats": 34
+    },
+    {
+        "id": 8,
+        "title": "Tech Event 8",
+        "description": "True read support. Have seven before ahead.",
+        "date": "2025-12-06",
+        "category": "Meetup",
+        "location": "New York",
+        "availableSeats": 37
+    },
+    {
+        "id": 9,
+        "title": "Seminar Event 9",
+        "description": "Nation us possible teacher culture we possible.",
+        "date": "2025-03-10",
+        "category": "Tech",
+        "location": "New York",
+        "availableSeats": 15
+    },
+    {
+        "id": 10,
+        "title": "Conference Event 10",
+        "description": "Drug doctor together west.",
+        "date": "2025-09-24",
+        "category": "Seminar",
+        "location": "New York",
+        "availableSeats": 23
+    },
+    {
+        "id": 11,
+        "title": "Conference Event 11",
+        "description": "Like force bed short for use.",
+        "date": "2025-01-27",
+        "category": "Meetup",
+        "location": "Austin",
+        "availableSeats": 44
+    },
+    {
+        "id": 12,
+        "title": "Seminar Event 12",
+        "description": "May claim fact bring. See state store walk.",
+        "date": "2025-07-06",
+        "category": "Workshop",
+        "location": "Seattle",
+        "availableSeats": 20
+    },
+    {
+        "id": 13,
+        "title": "Conference Event 13",
+        "description": "More per step spend impact agent.",
+        "date": "2025-01-29",
+        "category": "Meetup",
+        "location": "Boston",
+        "availableSeats": 12
+    },
+    {
+        "id": 14,
+        "title": "Seminar Event 14",
+        "description": "View help voice street you amount.",
+        "date": "2025-01-27",
+        "category": "Seminar",
+        "location": "Los Angeles",
+        "availableSeats": 48
+    },
+    {
+        "id": 15,
+        "title": "Workshop Event 15",
+        "description": "Mother over moment prevent someone kind voice.",
+        "date": "2025-01-23",
+        "category": "Conference",
+        "location": "Boston",
+        "availableSeats": 26
+    },
+    {
+        "id": 16,
+        "title": "Tech Event 16",
+        "description": "Trade TV democratic game culture enjoy.",
+        "date": "2025-06-23",
+        "category": "Tech",
+        "location": "Austin",
+        "availableSeats": 44
+    },
+    {
+        "id": 17,
+        "title": "Meetup Event 17",
+        "description": "Different bed music a.",
+        "date": "2025-11-09",
+        "category": "Meetup",
+        "location": "San Francisco",
+        "availableSeats": 11
+    },
+    {
+        "id": 18,
+        "title": "Meetup Event 18",
+        "description": "Reduce PM finally. Also upon worker business.",
+        "date": "2025-05-29",
+        "category": "Meetup",
+        "location": "New York",
+        "availableSeats": 20
+    },
+    {
+        "id": 19,
+        "title": "Tech Event 19",
+        "description": "Term art could avoid when medical.",
+        "date": "2025-06-01",
+        "category": "Meetup",
+        "location": "New York",
+        "availableSeats": 38
+    },
+    {
+        "id": 20,
+        "title": "Workshop Event 20",
+        "description": "Stuff help prepare soldier.",
+        "date": "2025-09-04",
+        "category": "Workshop",
+        "location": "Los Angeles",
+        "availableSeats": 41
+    },
+    {
+        "id": 21,
+        "title": "Tech Event 21",
+        "description": "Chair argue computer customer strong.",
+        "date": "2025-01-19",
+        "category": "Tech",
+        "location": "Los Angeles",
+        "availableSeats": 37
+    },
+    {
+        "id": 22,
+        "title": "Conference Event 22",
+        "description": "Make modern travel pay cup black.",
+        "date": "2025-04-14",
+        "category": "Seminar",
+        "location": "Boston",
+        "availableSeats": 41
+    },
+    {
+        "id": 23,
+        "title": "Meetup Event 23",
+        "description": "Current rather history.",
+        "date": "2025-06-29",
+        "category": "Meetup",
+        "location": "San Francisco",
+        "availableSeats": 47
+    },
+    {
+        "id": 24,
+        "title": "Workshop Event 24",
+        "description": "Between result impact either.",
+        "date": "2025-10-19",
+        "category": "Meetup",
+        "location": "Seattle",
+        "availableSeats": 16
+    },
+    {
+        "id": 25,
+        "title": "Meetup Event 25",
+        "description": "Leg eight agent tough glass available.",
+        "date": "2025-03-25",
+        "category": "Meetup",
+        "location": "San Francisco",
+        "availableSeats": 24
+    },
+    {
+        "id": 26,
+        "title": "Conference Event 26",
+        "description": "Word main turn movement clear kitchen.",
+        "date": "2025-04-22",
+        "category": "Seminar",
+        "location": "New York",
+        "availableSeats": 25
+    },
+    {
+        "id": 27,
+        "title": "Workshop Event 27",
+        "description": "Large about card four state business.",
+        "date": "2025-08-26",
+        "category": "Seminar",
+        "location": "Chicago",
+        "availableSeats": 18
+    },
+    {
+        "id": 28,
+        "title": "Tech Event 28",
+        "description": "Cause action trip official another thank.",
+        "date": "2025-05-02",
+        "category": "Seminar",
+        "location": "Seattle",
+        "availableSeats": 23
+    },
+    {
+        "id": 29,
+        "title": "Seminar Event 29",
+        "description": "Heavy whose because card successful.",
+        "date": "2025-02-27",
+        "category": "Workshop",
+        "location": "Seattle",
+        "availableSeats": 38
+    },
+    {
+        "id": 30,
+        "title": "Meetup Event 30",
+        "description": "Old public partner old gas popular.",
+        "date": "2025-10-04",
+        "category": "Meetup",
+        "location": "Boston",
+        "availableSeats": 27
+    },
+    {
+        "id": 31,
+        "title": "Seminar Event 31",
+        "description": "Growth during treat all material.",
+        "date": "2025-09-26",
+        "category": "Seminar",
+        "location": "New York",
+        "availableSeats": 47
+    },
+    {
+        "id": 32,
+        "title": "Seminar Event 32",
+        "description": "This understand game development miss.",
+        "date": "2025-04-09",
+        "category": "Meetup",
+        "location": "Chicago",
+        "availableSeats": 15
+    },
+    {
+        "id": 33,
+        "title": "Workshop Event 33",
+        "description": "Low medical away language.",
+        "date": "2025-01-11",
+        "category": "Seminar",
+        "location": "Los Angeles",
+        "availableSeats": 41
+    },
+    {
+        "id": 34,
+        "title": "Workshop Event 34",
+        "description": "Business can too class whose.",
+        "date": "2025-07-06",
+        "category": "Tech",
+        "location": "New York",
+        "availableSeats": 14
+    },
+    {
+        "id": 35,
+        "title": "Conference Event 35",
+        "description": "Reduce military process join discuss magazine.",
+        "date": "2025-01-07",
+        "category": "Workshop",
+        "location": "New York",
+        "availableSeats": 37
+    },
+    {
+        "id": 36,
+        "title": "Workshop Event 36",
+        "description": "Dinner activity without institution fish center.",
+        "date": "2025-02-26",
+        "category": "Meetup",
+        "location": "Chicago",
+        "availableSeats": 15
+    },
+    {
+        "id": 37,
+        "title": "Workshop Event 37",
+        "description": "Floor between statement sea similar season.",
+        "date": "2025-09-23",
+        "category": "Workshop",
+        "location": "Boston",
+        "availableSeats": 36
+    },
+    {
+        "id": 38,
+        "title": "Seminar Event 38",
+        "description": "Field physical yes enjoy age.",
+        "date": "2025-10-21",
+        "category": "Workshop",
+        "location": "Austin",
+        "availableSeats": 19
+    },
+    {
+        "id": 39,
+        "title": "Conference Event 39",
+        "description": "Although anyone year meeting marriage six.",
+        "date": "2025-12-20",
+        "category": "Tech",
+        "location": "San Francisco",
+        "availableSeats": 42
+    },
+    {
+        "id": 40,
+        "title": "Tech Event 40",
+        "description": "Assume campaign drop bag accept east.",
+        "date": "2025-01-14",
+        "category": "Workshop",
+        "location": "San Francisco",
+        "availableSeats": 48
+    },
+    {
+        "id": 41,
+        "title": "Workshop Event 41",
+        "description": "Experience bank at stay room help.",
+        "date": "2025-06-01",
+        "category": "Seminar",
+        "location": "New York",
+        "availableSeats": 10
+    },
+    {
+        "id": 42,
+        "title": "Meetup Event 42",
+        "description": "Process yes others week how.",
+        "date": "2025-02-03",
+        "category": "Tech",
+        "location": "San Francisco",
+        "availableSeats": 43
+    },
+    {
+        "id": 43,
+        "title": "Conference Event 43",
+        "description": "Necessary local next go campaign us Mrs eight.",
+        "date": "2025-04-08",
+        "category": "Meetup",
+        "location": "San Francisco",
+        "availableSeats": 38
+    },
+    {
+        "id": 44,
+        "title": "Workshop Event 44",
+        "description": "Gun can throughout make discover.",
+        "date": "2025-10-30",
+        "category": "Tech",
+        "location": "Los Angeles",
+        "availableSeats": 36
+    },
+    {
+        "id": 45,
+        "title": "Meetup Event 45",
+        "description": "Defense car this mouth Republican last strategy.",
+        "date": "2025-01-03",
+        "category": "Meetup",
+        "location": "Boston",
+        "availableSeats": 43
+    },
+    {
+        "id": 46,
+        "title": "Seminar Event 46",
+        "description": "Pay draw simply.",
+        "date": "2025-11-22",
+        "category": "Conference",
+        "location": "Austin",
+        "availableSeats": 49
+    },
+    {
+        "id": 47,
+        "title": "Seminar Event 47",
+        "description": "Major still remember Republican agree others.",
+        "date": "2025-12-06",
+        "category": "Workshop",
+        "location": "San Francisco",
+        "availableSeats": 38
+    },
+    {
+        "id": 48,
+        "title": "Workshop Event 48",
+        "description": "Enough fine military arm help my wear enjoy.",
+        "date": "2025-07-18",
+        "category": "Meetup",
+        "location": "San Francisco",
+        "availableSeats": 34
+    },
+    {
+        "id": 49,
+        "title": "Meetup Event 49",
+        "description": "Door still reality little PM the successful.",
+        "date": "2025-05-30",
+        "category": "Conference",
+        "location": "Chicago",
+        "availableSeats": 35
+    },
+    {
+        "id": 50,
+        "title": "Meetup Event 50",
+        "description": "Change deep quality staff truth if place.",
+        "date": "2025-10-29",
+        "category": "Workshop",
+        "location": "Seattle",
+        "availableSeats": 46
+    },
+    {
+        "id": 51,
+        "title": "Seminar Event 51",
+        "description": "Lay place effort after network interesting.",
+        "date": "2025-12-24",
+        "category": "Tech",
+        "location": "Boston",
+        "availableSeats": 33
+    },
+    {
+        "id": 52,
+        "title": "Workshop Event 52",
+        "description": "Different protect radio region.",
+        "date": "2025-04-18",
+        "category": "Meetup",
+        "location": "Chicago",
+        "availableSeats": 43
+    },
+    {
+        "id": 53,
+        "title": "Tech Event 53",
+        "description": "Like create author employee.",
+        "date": "2025-10-31",
+        "category": "Conference",
+        "location": "Boston",
+        "availableSeats": 17
+    },
+    {
+        "id": 54,
+        "title": "Conference Event 54",
+        "description": "Our left want three never board administration.",
+        "date": "2025-07-18",
+        "category": "Seminar",
+        "location": "Chicago",
+        "availableSeats": 32
+    },
+    {
+        "id": 55,
+        "title": "Meetup Event 55",
+        "description": "Debate practice difference fast.",
+        "date": "2025-11-11",
+        "category": "Meetup",
+        "location": "Los Angeles",
+        "availableSeats": 49
+    },
+    {
+        "id": 56,
+        "title": "Meetup Event 56",
+        "description": "Seem place catch although history hundred.",
+        "date": "2025-01-18",
+        "category": "Tech",
+        "location": "Austin",
+        "availableSeats": 11
+    },
+    {
+        "id": 57,
+        "title": "Meetup Event 57",
+        "description": "Think none nothing provide point impact positive.",
+        "date": "2025-05-27",
+        "category": "Meetup",
+        "location": "Seattle",
+        "availableSeats": 40
+    },
+    {
+        "id": 58,
+        "title": "Meetup Event 58",
+        "description": "Team subject tonight difference.",
+        "date": "2025-10-17",
+        "category": "Tech",
+        "location": "Boston",
+        "availableSeats": 19
+    },
+    {
+        "id": 59,
+        "title": "Seminar Event 59",
+        "description": "List hundred movement. Bag best artist physical.",
+        "date": "2025-12-20",
+        "category": "Tech",
+        "location": "Boston",
+        "availableSeats": 23
+    },
+    {
+        "id": 60,
+        "title": "Tech Event 60",
+        "description": "Majority rather or. Dark be guy officer trip.",
+        "date": "2025-06-03",
+        "category": "Meetup",
+        "location": "New York",
+        "availableSeats": 23
+    },
+    {
+        "id": 61,
+        "title": "Tech Event 61",
+        "description": "Hold assume month capital region teach occur.",
+        "date": "2025-06-19",
+        "category": "Meetup",
+        "location": "Seattle",
+        "availableSeats": 37
+    },
+    {
+        "id": 62,
+        "title": "Meetup Event 62",
+        "description": "Stop three per add foreign table drive.",
+        "date": "2025-07-15",
+        "category": "Tech",
+        "location": "Chicago",
+        "availableSeats": 24
+    },
+    {
+        "id": 63,
+        "title": "Conference Event 63",
+        "description": "Very machine we from can how.",
+        "date": "2025-03-09",
+        "category": "Meetup",
+        "location": "Chicago",
+        "availableSeats": 46
+    },
+    {
+        "id": 64,
+        "title": "Tech Event 64",
+        "description": "Administration play chance field.",
+        "date": "2025-05-11",
+        "category": "Seminar",
+        "location": "Seattle",
+        "availableSeats": 34
+    },
+    {
+        "id": 65,
+        "title": "Workshop Event 65",
+        "description": "Maintain voice treat also yourself.",
+        "date": "2025-08-09",
+        "category": "Conference",
+        "location": "Los Angeles",
+        "availableSeats": 44
+    },
+    {
+        "id": 66,
+        "title": "Meetup Event 66",
+        "description": "Anything five difference ever responsibility.",
+        "date": "2025-07-15",
+        "category": "Tech",
+        "location": "Seattle",
+        "availableSeats": 47
+    },
+    {
+        "id": 67,
+        "title": "Seminar Event 67",
+        "description": "Say process owner exist we art section.",
+        "date": "2025-03-10",
+        "category": "Meetup",
+        "location": "Seattle",
+        "availableSeats": 46
+    },
+    {
+        "id": 68,
+        "title": "Conference Event 68",
+        "description": "Always customer picture ever citizen whatever.",
+        "date": "2025-09-26",
+        "category": "Meetup",
+        "location": "Seattle",
+        "availableSeats": 16
+    },
+    {
+        "id": 69,
+        "title": "Meetup Event 69",
+        "description": "Visit company left class fall think.",
+        "date": "2025-01-21",
+        "category": "Seminar",
+        "location": "Los Angeles",
+        "availableSeats": 26
+    },
+    {
+        "id": 70,
+        "title": "Conference Event 70",
+        "description": "Of building top report edge among field.",
+        "date": "2025-04-26",
+        "category": "Meetup",
+        "location": "Austin",
+        "availableSeats": 32
+    },
+    {
+        "id": 71,
+        "title": "Tech Event 71",
+        "description": "Hold product direction too size leg same how.",
+        "date": "2025-05-07",
+        "category": "Seminar",
+        "location": "Chicago",
+        "availableSeats": 16
+    },
+    {
+        "id": 72,
+        "title": "Seminar Event 72",
+        "description": "Again of everybody product pull kid entire.",
+        "date": "2025-05-04",
+        "category": "Seminar",
+        "location": "Austin",
+        "availableSeats": 27
+    },
+    {
+        "id": 73,
+        "title": "Tech Event 73",
+        "description": "Across above scene break dog the.",
+        "date": "2025-08-04",
+        "category": "Tech",
+        "location": "Seattle",
+        "availableSeats": 50
+    },
+    {
+        "id": 74,
+        "title": "Seminar Event 74",
+        "description": "Language family upon letter blue wait benefit.",
+        "date": "2025-07-07",
+        "category": "Tech",
+        "location": "Chicago",
+        "availableSeats": 16
+    },
+    {
+        "id": 75,
+        "title": "Conference Event 75",
+        "description": "There power Congress build standard garden.",
+        "date": "2025-07-30",
+        "category": "Tech",
+        "location": "Seattle",
+        "availableSeats": 36
+    },
+    {
+        "id": 76,
+        "title": "Conference Event 76",
+        "description": "Third today perform government.",
+        "date": "2025-09-14",
+        "category": "Meetup",
+        "location": "Austin",
+        "availableSeats": 15
+    },
+    {
+        "id": 77,
+        "title": "Tech Event 77",
+        "description": "All heavy government hot white.",
+        "date": "2025-03-25",
+        "category": "Meetup",
+        "location": "Chicago",
+        "availableSeats": 18
+    },
+    {
+        "id": 78,
+        "title": "Tech Event 78",
+        "description": "Available yeah radio stage.",
+        "date": "2025-04-13",
+        "category": "Meetup",
+        "location": "Austin",
+        "availableSeats": 14
+    },
+    {
+        "id": 79,
+        "title": "Tech Event 79",
+        "description": "Hair for wonder couple suffer.",
+        "date": "2025-01-16",
+        "category": "Tech",
+        "location": "San Francisco",
+        "availableSeats": 46
+    },
+    {
+        "id": 80,
+        "title": "Tech Event 80",
+        "description": "Strong fight trouble contain animal whether.",
+        "date": "2025-03-20",
+        "category": "Meetup",
+        "location": "Los Angeles",
+        "availableSeats": 19
+    },
+    {
+        "id": 81,
+        "title": "Seminar Event 81",
+        "description": "Catch benefit high drop whether Mr.",
+        "date": "2025-03-19",
+        "category": "Tech",
+        "location": "Chicago",
+        "availableSeats": 24
+    },
+    {
+        "id": 82,
+        "title": "Workshop Event 82",
+        "description": "Growth enough sea set.",
+        "date": "2025-09-06",
+        "category": "Seminar",
+        "location": "Austin",
+        "availableSeats": 22
+    },
+    {
+        "id": 83,
+        "title": "Conference Event 83",
+        "description": "Source court open your pressure.",
+        "date": "2025-05-31",
+        "category": "Meetup",
+        "location": "Boston",
+        "availableSeats": 19
+    },
+    {
+        "id": 84,
+        "title": "Workshop Event 84",
+        "description": "Radio see four international and however among.",
+        "date": "2025-06-21",
+        "category": "Seminar",
+        "location": "Chicago",
+        "availableSeats": 30
+    },
+    {
+        "id": 85,
+        "title": "Meetup Event 85",
+        "description": "Lay history health success thank military.",
+        "date": "2025-11-22",
+        "category": "Conference",
+        "location": "Los Angeles",
+        "availableSeats": 26
+    },
+    {
+        "id": 86,
+        "title": "Workshop Event 86",
+        "description": "Seem human total dark cut.",
+        "date": "2025-05-31",
+        "category": "Meetup",
+        "location": "Los Angeles",
+        "availableSeats": 49
+    },
+    {
+        "id": 87,
+        "title": "Tech Event 87",
+        "description": "Economic along financial social degree.",
+        "date": "2025-01-16",
+        "category": "Workshop",
+        "location": "Seattle",
+        "availableSeats": 47
+    },
+    {
+        "id": 88,
+        "title": "Conference Event 88",
+        "description": "Research include start toward.",
+        "date": "2025-07-14",
+        "category": "Tech",
+        "location": "Seattle",
+        "availableSeats": 13
+    },
+    {
+        "id": 89,
+        "title": "Workshop Event 89",
+        "description": "Out cost middle campaign. Until owner safe.",
+        "date": "2025-12-29",
+        "category": "Workshop",
+        "location": "Austin",
+        "availableSeats": 30
+    },
+    {
+        "id": 90,
+        "title": "Workshop Event 90",
+        "description": "Future five day strategy partner type.",
+        "date": "2025-02-24",
+        "category": "Meetup",
+        "location": "Boston",
+        "availableSeats": 27
+    },
+    {
+        "id": 91,
+        "title": "Tech Event 91",
+        "description": "When science morning many.",
+        "date": "2025-09-25",
+        "category": "Conference",
+        "location": "Chicago",
+        "availableSeats": 45
+    },
+    {
+        "id": 92,
+        "title": "Tech Event 92",
+        "description": "Write bank attorney forward.",
+        "date": "2025-01-16",
+        "category": "Meetup",
+        "location": "Austin",
+        "availableSeats": 18
+    },
+    {
+        "id": 93,
+        "title": "Seminar Event 93",
+        "description": "Something street our chair let make community.",
+        "date": "2025-11-27",
+        "category": "Tech",
+        "location": "San Francisco",
+        "availableSeats": 26
+    },
+    {
+        "id": 94,
+        "title": "Conference Event 94",
+        "description": "Relate picture smile job. Since side effort.",
+        "date": "2025-03-19",
+        "category": "Tech",
+        "location": "New York",
+        "availableSeats": 32
+    },
+    {
+        "id": 95,
+        "title": "Conference Event 95",
+        "description": "Time set federal employee play sing scene.",
+        "date": "2025-02-26",
+        "category": "Meetup",
+        "location": "Seattle",
+        "availableSeats": 46
+    },
+    {
+        "id": 96,
+        "title": "Conference Event 96",
+        "description": "Term you couple.",
+        "date": "2025-05-17",
+        "category": "Conference",
+        "location": "Austin",
+        "availableSeats": 46
+    },
+    {
+        "id": 97,
+        "title": "Meetup Event 97",
+        "description": "Drive reach box daughter.",
+        "date": "2025-08-13",
+        "category": "Tech",
+        "location": "Seattle",
+        "availableSeats": 47
+    },
+    {
+        "id": 98,
+        "title": "Conference Event 98",
+        "description": "Letter yeah Democrat game stock good.",
+        "date": "2025-01-14",
+        "category": "Tech",
+        "location": "Boston",
+        "availableSeats": 36
+    },
+    {
+        "id": 99,
+        "title": "Workshop Event 99",
+        "description": "Try defense participant beautiful.",
+        "date": "2025-03-28",
+        "category": "Seminar",
+        "location": "New York",
+        "availableSeats": 41
+    },
+    {
+        "id": 100,
+        "title": "Meetup Event 100",
+        "description": "Item and executive increase wonder treat miss.",
+        "date": "2025-08-09",
+        "category": "Conference",
+        "location": "Seattle",
+        "availableSeats": 27
+    }
+]
