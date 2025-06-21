@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 const EventCard = ({ event }) => {
   const formatDate = (dateString) => new Date(dateString).toDateString();
@@ -27,13 +28,13 @@ const EventCard = ({ event }) => {
             <span className="text-sm">{event.availableSeats} seats available</span>
           </div>
         </div>
-
-        <button
-          // onClick={() => onViewDetails(event.id)}
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium"
-        >
-          View Details
-        </button>
+        <Link to={`/event/${event.id}`}>
+          <button
+            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium"
+          >
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
