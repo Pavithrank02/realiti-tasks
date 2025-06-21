@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom';
+import { MdDateRange, MdMap, MdPeople } from "react-icons/md";
+
+
 
 const EventCard = ({ event }) => {
   const formatDate = (dateString) => new Date(dateString).toDateString();
@@ -16,21 +19,21 @@ const EventCard = ({ event }) => {
 
         <div className="space-y-2 mb-4">
           <div className="flex items-center text-gray-600">
-            {/* <Calendar className="w-4 h-4 mr-2" /> */}
+            <MdDateRange className="w-4 h-4 mr-2" />
             <span className="text-sm">{formatDate(event.date)}</span>
           </div>
           <div className="flex items-center text-gray-600">
-            {/* <MapPin className="w-4 h-4 mr-2" /> */}
+            <MdMap className="w-4 h-4 mr-2" />
             <span className="text-sm">{event.location}</span>
           </div>
           <div className="flex items-center text-gray-600">
-            {/* <Users className="w-4 h-4 mr-2" /> */}
+            <MdPeople className="w-4 h-4 mr-2" />
             <span className="text-sm">{event.availableSeats} seats available</span>
           </div>
         </div>
         <Link to={`/event/${event.id}`}>
           <button
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium"
+            className="w-full bg-[#f19a1f] font-semibold text-white py-2 px-4 rounded-md hover:bg-orange-600 transition-colors duration-200 "
           >
             View Details
           </button>

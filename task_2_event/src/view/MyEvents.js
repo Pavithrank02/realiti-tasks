@@ -1,28 +1,48 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { MdDateRange, MdMap } from "react-icons/md";
 
 const MyEvents = () => {
   const formatDate = (dateString) => new Date(dateString).toDateString();
   const [registeredEvents, setRegisteredEvents] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const events = JSON.parse(localStorage.getItem("registeredEvents")) || []
-    setRegisteredEvents(events)
-  })
+    const events = JSON.parse(localStorage.getItem("registeredEvents")) || [];
+    setRegisteredEvents(events);
+  }, []);
+
+  const handleCancelBooking = (eventId) => {
+
+    const updatedRegisteredEvents = registeredEvents.filter((event) => event.id !== eventId);
+    setRegisteredEvents(updatedRegisteredEvents);
+    localStorage.setItem("registeredEvents", JSON.stringify(updatedRegisteredEvents));
+    alert("Booking cancelled successfully!");
+
+  };
+
   return (
-    <div className="max-w-6xl mx-auto">
-      {/* <button
-        onClick={onBack}
+    <div className="max-w-6xl mx-auto my-full p-4">
+      <button
+        onClick={() => navigate(-1)}
         className="flex items-center text-blue-600 hover:text-blue-800 mb-6 font-medium"
       >
-        <ArrowLeft className="w-4 h-4 mr-2" />
+        <FaArrowLeftLong className="w-4 h-4 mr-2" />
         Back to Events
-      </button> */}
+      </button>
 
       <h1 className="text-3xl font-bold text-gray-800 mb-8">My Registered Events</h1>
 
       {registeredEvents.length === 0 ? (
         <div className="text-center py-12">
           <p className="text-gray-500 text-lg">You haven't registered for any events yet.</p>
+          <button
+            onClick={() => navigate("/")}
+            className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+          >
+            Explore Events
+          </button>
         </div>
       ) : (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -38,17 +58,17 @@ const MyEvents = () => {
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-gray-600">
-                    {/* <Calendar className="w-4 h-4 mr-2" /> */}
+                    <MdDateRange className="w-4 h-4 mr-2" />
                     <span className="text-sm">{formatDate(event.date)}</span>
                   </div>
                   <div className="flex items-center text-gray-600">
-                    {/* <MapPin className="w-4 h-4 mr-2" /> */}
+                    <MdMap className="w-4 h-4 mr-2" />
                     <span className="text-sm">{event.location}</span>
                   </div>
                 </div>
 
                 <button
-                  // onClick={() => onCancelBooking(event.id)}
+                  onClick={() => handleCancelBooking(event.id)}
                   className="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-colors duration-200 font-medium"
                 >
                   Cancel Booking
@@ -60,6 +80,6 @@ const MyEvents = () => {
       )}
     </div>
   );
-}
+};
 
-export default MyEvents
+export default MyEvents;
