@@ -15,21 +15,21 @@ const EventCard = ({ event }) => {
 
         <div className="space-y-2 mb-4">
           <div className="flex items-center text-gray-600">
-            <Calendar className="w-4 h-4 mr-2" />
+            {/* <Calendar className="w-4 h-4 mr-2" /> */}
             <span className="text-sm">{formatDate(event.date)}</span>
           </div>
           <div className="flex items-center text-gray-600">
-            <MapPin className="w-4 h-4 mr-2" />
+            {/* <MapPin className="w-4 h-4 mr-2" /> */}
             <span className="text-sm">{event.location}</span>
           </div>
           <div className="flex items-center text-gray-600">
-            <Users className="w-4 h-4 mr-2" />
+            {/* <Users className="w-4 h-4 mr-2" /> */}
             <span className="text-sm">{event.availableSeats} seats available</span>
           </div>
         </div>
 
         <button
-          onClick={() => onViewDetails(event.id)}
+          // onClick={() => onViewDetails(event.id)}
           className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium"
         >
           View Details
