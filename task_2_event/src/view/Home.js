@@ -39,17 +39,17 @@ const Home = () => {
 
       <div className="flex justify-center items-center mt-4">
         <button
-          className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+          className="px-4 py-2 bg-gray-300 font-semibold rounded disabled:opacity-50 hover:bg-[#f19a1f]"
           onClick={() => setCurrentPage((prev) => prev - 1)}
           disabled={currentPage === 1}
         >
           Previous
         </button>
-        <span className="mx-2">
+        <span className="mx-2 font-extrabold">
           Page {currentPage} of {totalPage}
         </span>
         <button
-          className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+          className="px-4 py-2 font-semibold bg-gray-300 rounded disabled:opacity-50 hover:bg-[#f19a1f]"
           onClick={() => setCurrentPage((prev) => prev + 1)}
           disabled={currentPage === totalPage}
         >

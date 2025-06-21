@@ -23,10 +23,10 @@ const MyEvents = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto my-full p-4">
+    <div className="max-w-6xl mx-auto my-full p-4 min-h-screen">
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center text-blue-600 hover:text-blue-800 mb-6 font-medium"
+        className="flex items-center text-[#f19a1f] hover:text-orange-600 mb-6 font-medium"
       >
         <FaArrowLeftLong className="w-4 h-4 mr-2" />
         Back to Events
@@ -39,7 +39,7 @@ const MyEvents = () => {
           <p className="text-gray-500 text-lg">You haven't registered for any events yet.</p>
           <button
             onClick={() => navigate("/")}
-            className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+            className="mt-4 px-6 py-2 bg-[#f19a1f] text-white rounded-md hover:bg-orange-700 transition-colors"
           >
             Explore Events
           </button>
@@ -50,7 +50,9 @@ const MyEvents = () => {
             <div key={event.id} className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-semibold text-gray-800">{event.title}</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {event.title}
+                  </h3>
                   <span className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full font-medium">
                     Registered
                   </span>
@@ -58,11 +60,11 @@ const MyEvents = () => {
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-gray-600">
-                    <MdDateRange className="w-4 h-4 mr-2" />
+                    <MdDateRange className="w-4 h-4 mr-2 text-[#f19a1f]" />
                     <span className="text-sm">{formatDate(event.date)}</span>
                   </div>
                   <div className="flex items-center text-gray-600">
-                    <MdMap className="w-4 h-4 mr-2" />
+                    <MdMap className="w-4 h-4 mr-2 text-[#f19a1f]" />
                     <span className="text-sm">{event.location}</span>
                   </div>
                 </div>

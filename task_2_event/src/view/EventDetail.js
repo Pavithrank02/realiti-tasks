@@ -44,20 +44,20 @@ const EventDetail = () => {
   }
   if (!event) return <p>Loading...</p>;
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto min-h-screen">
       <button
         onClick={() => navigate(-1)}
-        className="flex items-center text-orange-400 hover:text-blue-800 mb-6 font-medium"
+        className="flex items-center text-[#f19a1f] hover:text-orange-700 mb-6 font-medium"
       >
         <FaArrowLeftLong className="w-4 h-4 mr-2" />
         Back to Events
       </button>
 
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden ">
         <div className="p-8">
           <div className="flex justify-between items-start mb-6">
             <h1 className="text-3xl font-bold text-gray-800">{event.title}</h1>
-            <span className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-medium">
+            <span className="px-4 py-2 bg-[#f19a1f] text-[#1E1E54] rounded-full font-medium">
               {event.category}
             </span>
           </div>
@@ -67,7 +67,7 @@ const EventDetail = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="space-y-4">
               <div className="flex items-center text-gray-700">
-                <MdDateRange className="w-5 h-5 mr-3 text-orange-400" />
+                <MdDateRange className="w-5 h-5 mr-3 text-[#f19a1f]" />
                 <div>
                   <span className="font-medium">Date:</span>
                   <p className="text-gray-600">{formatDate(event.date)}</p>
@@ -75,7 +75,7 @@ const EventDetail = () => {
               </div>
 
               <div className="flex items-center text-gray-700">
-                <MdMap className="w-5 h-5 mr-3 text-orange-400" />
+                <MdMap className="w-5 h-5 mr-3 text-[#f19a1f]" />
                 <div>
                   <span className="font-medium">Location:</span>
                   <p className="text-gray-600">{event.location}</p>
@@ -85,7 +85,7 @@ const EventDetail = () => {
 
             <div className="space-y-4">
               <div className="flex items-center text-gray-700">
-                <MdPeople className="w-5 h-5 mr-3 text-orange-400" />
+                <MdPeople className="w-5 h-5 mr-3 text-[#f19a1f]" />
                 <div>
                   <span className="font-medium">Available Seats:</span>
                   <p className="text-gray-600">{event.availableSeats} remaining</p>
@@ -105,7 +105,7 @@ const EventDetail = () => {
             ) : event.availableSeats > 0 ? (
               <button
                 onClick={handleBookNow}
-                className="bg-orange-400 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium"
+                className="bg-[#f19a1f] text-white px-8 py-3 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
               >
                 Book Now
               </button>

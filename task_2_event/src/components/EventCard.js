@@ -19,16 +19,16 @@ const EventCard = ({ event }) => {
 
         <div className="space-y-2 mb-4">
           <div className="flex items-center text-gray-600">
-            <MdDateRange className="w-4 h-4 mr-2" />
-            <span className="text-sm">{formatDate(event.date)}</span>
+            <MdDateRange className="w-4 h-4 mr-2 text-[#f19a1f]" />
+            <span className="text-base">{formatDate(event.date)}</span>
           </div>
           <div className="flex items-center text-gray-600">
-            <MdMap className="w-4 h-4 mr-2" />
-            <span className="text-sm">{event.location}</span>
+            <MdMap className="w-4 h-4 mr-2 text-[#f19a1f]" />
+            <span className="text-base">{event.location}</span>
           </div>
           <div className="flex items-center text-gray-600">
-            <MdPeople className="w-4 h-4 mr-2" />
-            <span className="text-sm">{event.availableSeats} seats available</span>
+            <MdPeople className="w-4 h-4 mr-2 text-[#f19a1f]" />
+            <span className="text-base">{event.availableSeats} seats available</span>
           </div>
         </div>
         <Link to={`/event/${event.id}`}>
