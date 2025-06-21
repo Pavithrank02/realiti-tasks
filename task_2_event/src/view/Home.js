@@ -11,7 +11,7 @@ const Home = () => {
   const currentEvents = eventData.slice(start, end);
 
   return (
-    <div>
+    <div className='flex flex-col justify-center'>
       <h1>Upcoming Events</h1>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
         {currentEvents.map((event) => {
@@ -20,7 +20,7 @@ const Home = () => {
           )
         })}
       </div>
-      <div className="flex justify-between items-center mt-4">
+      <div className="flex justify-center items-center mt-4 ">
         <button
           className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
           onClick={() => setCurrentPage((prev) => prev - 1)}
@@ -28,7 +28,7 @@ const Home = () => {
         >
           Previous
         </button>
-        <span>
+        <span className='mr-2 ml-2'>
           Page {currentPage} of {totalPage}
         </span>
         <button
