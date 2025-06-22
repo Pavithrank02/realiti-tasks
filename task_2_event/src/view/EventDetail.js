@@ -98,21 +98,21 @@ const EventDetail = () => {
             {isEventBooked ? (
               <button
                 disabled
-                className="bg-green-100 text-green-800 px-8 py-3 rounded-md font-medium cursor-not-allowed"
+                className="bg-green-100 text-green-800 px-8 py-3 rounded-md font-bold cursor-not-allowed"
               >
                 Already Booked
               </button>
             ) : event.availableSeats > 0 ? (
               <button
                 onClick={handleBookNow}
-                className="bg-[#f19a1f] text-white px-8 py-3 rounded-md hover:bg-orange-700 transition-colors duration-200 font-medium"
+                className="bg-[#f19a1f] text-white px-8 py-3 rounded-md hover:bg-orange-700 transition-colors duration-200 font-bold"
               >
                 Book Now
               </button>
             ) : (
               <button
                 disabled
-                className="bg-gray-200 text-gray-400 px-8 py-3 rounded-md cursor-not-allowed font-medium"
+                className="bg-gray-200 text-gray-400 px-8 py-3 rounded-md cursor-not-allowed font-bold"
               >
                 Sold Out
               </button>
