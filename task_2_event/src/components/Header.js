@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { FaUserCircle, FaSearch } from "react-icons/fa";
 import logo from '../assets/logo.png'
 
 
