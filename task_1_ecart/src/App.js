@@ -17,17 +17,13 @@ function App() {
 
   const search = searchTerm.toLowerCase();
   const cartItems = useSelector((state) => state.addCart)
-  const filteredProducts = allProducts.filter(
-    (product) =>
-      product?.title?.toLowerCase().includes(search) ||
-      product?.category?.toLowerCase().includes(search)
-  );
+  const filteredProducts = allProducts.filter((product) => product?.title?.toLowerCase().includes(search) || product?.category?.toLowerCase().includes(search));
   const noOfPages = Math.ceil(filteredProducts.length / itemsPerPage);
   const start = currentPage * itemsPerPage;
   const end = start + itemsPerPage;
 
   const paginatedProducts = filteredProducts.slice(start, end);
-  console.log(filteredProducts)
+  // console.log(filteredProducts)
 
   const handleCartModal = () => {
     setModal(true)

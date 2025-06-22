@@ -16,7 +16,6 @@ const Cart = ({ closeModal }) => {
   return (
     <div onClick={closeModal} className="fixed inset-0 flex justify-center flex-col items-center bg-black bg-opacity-50 backdrop-blur-sm z-40"
     >
-
       {cartItems.length === 0 ? (
         <div className="text-center text-gray-600 text-lg bg-white">No items in cart</div>
       ) : (
