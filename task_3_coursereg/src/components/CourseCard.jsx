@@ -45,7 +45,7 @@ const CourseCard = ({ courses }) => {
                 <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed line-clamp-3 mb-2">
                   {course.description}
                 </p>
-                <p className="text-xl text-gray-500 dark:text-gray-400 font-extrabold">
+                <p className="text-lg text-gray-500 dark:text-gray-400 font-bold">
                   Instructor: <span className="font-medium">{course.instructor}</span>
                 </p>
               </div>

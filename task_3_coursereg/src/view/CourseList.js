@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CourseCard from "./CourseCard";
-import SearchFilter from "./SearchFilter";
+import CourseCard from "../components/CourseCard";
+import SearchFilter from "../components/SearchFilter";
 import { courseData } from "../MOCK_DATA";
 
 const CourseList = () => {

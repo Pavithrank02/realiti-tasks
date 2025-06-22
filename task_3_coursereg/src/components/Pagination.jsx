@@ -9,13 +9,13 @@ const Pagination = ({ currentPage, totalPages, nextPage, prevPage, goToPage }) =
     No course found
   </h2>) : (
     <div className="w-full flex flex-col items-center gap-4 mt-8">
-      <p className="text-lg font-semibold text-gray-700">Pages</p>
+      <p className="text-lg font-semibold text-gray-700 dark:text-neutral-100">Pages</p>
 
       <div className="flex items-center gap-2">
         <button
           disabled={currentPage === 0}
           onClick={prevPage}
-          className="p-2 rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="p-2 rounded-full border border-gray-300 text-gray-700 dark:bg-gray-600 dark:text-gray-200 hover:bg-gray-100 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           <FiChevronLeft size={20} />
         </button>
