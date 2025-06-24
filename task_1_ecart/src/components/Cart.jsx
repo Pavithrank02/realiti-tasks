@@ -1,25 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { removeCart } from '../redux/cartSlice'
 
 const Cart = ({ closeModal }) => {
 
   const cartItems = useSelector((state) => state.addCart)
+  const [cartItemsCount, setCartItemsCount] = useState("")
+  let count = 0
+
   const dispatch = useDispatch()
-  // console.log(cartItems)
+  console.log(cartItems)
   const handleRemove = (id) => {
     dispatch(removeCart(id))
   }
+  const handleIncrement = (id) => {
+    let cartId = cartItems.filter((i) => {
+      return i.id === id
+    })
+    console.log(cartId)
+    if (cartId) {
+      count += 1
+      setCartItemsCount(count)
 
+    }
+
+  }
   const total = cartItems.reduce((acc, item) => acc + item.price, 0)
 
   return (
-    <div onClick={closeModal} className="fixed inset-0 flex justify-center flex-col items-center bg-black bg-opacity-50 backdrop-blur-sm z-40"
+    <div className="fixed inset-0 flex justify-center flex-col items-center z-40"
     >
       {cartItems.length === 0 ? (
         <div className="text-center text-gray-600 text-lg bg-white">No items in cart</div>
       ) : (
         <div className="space-y-4 w-2/4 " onClick={(e) => e.stopPropagation()}   >
+          <div className='font-semibold'>
+            total Items:  {cartItems.length}
+            <div>
+              {cartItemsCount && (
+                <div>
+                  {cartItemsCount}
+                </div>
+              )}
+            </div>
+          </div>
           {cartItems.map((item) => (
             <div
               key={item.id}
@@ -39,6 +64,10 @@ const Cart = ({ closeModal }) => {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center gap-2 mt-4 sm:mt-0">
+                <button onClick={() => handleIncrement(item.id)}>
+                  Add Count
+                </button>
+
                 <button
                   onClick={() => handleRemove(item.id)}
                   className="text-red-600 hover:text-red-800 text-sm sm:text-base"
